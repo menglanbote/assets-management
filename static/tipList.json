@@ -1,0 +1,16 @@
+{
+  "code": "0",
+  "msg": "success",
+  "data": {
+    "assets": [
+      "assets_list",
+      "assets_area",
+      "assets_organization",
+      "assets_business"
+    ],
+    "hostservice": [],
+    "log": ["log_netfilterlog", "log_operationlog"],
+    "system": [],
+    "othertool": []
+  }
+}

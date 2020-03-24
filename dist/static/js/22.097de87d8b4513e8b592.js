@@ -1,0 +1,2 @@
+webpackJsonp([22],{"/NJM":function(e,t){},LBb0:function(e,t,a){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s={render:function(){var e=this.$createElement,t=this._self._c||e;return t("div",{staticClass:"system-database"},[t("router-view")],1)},staticRenderFns:[]};var n=a("C7Lr")({name:"system_database"},s,!1,function(e){a("/NJM")},"data-v-2f6f06c2",null);t.default=n.exports}});
+//# sourceMappingURL=22.097de87d8b4513e8b592.js.map

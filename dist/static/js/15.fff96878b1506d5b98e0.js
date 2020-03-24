@@ -1,0 +1,2 @@
+webpackJsonp([15],{Za4x:function(e,t){},h8hN:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){var e=this.$createElement,t=this._self._c||e;return t("div",{staticClass:"system-middleware"},[t("router-view")],1)},staticRenderFns:[]};var a=n("C7Lr")({name:"system_middleware",data:function(){return{}}},r,!1,function(e){n("Za4x")},"data-v-77e61034",null);t.default=a.exports}});
+//# sourceMappingURL=15.fff96878b1506d5b98e0.js.map

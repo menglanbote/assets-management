@@ -1,0 +1,27 @@
+export const SET_TOKEN = 'SET_TOKEN'
+
+export const SET_USERNAME = 'SET_USERNAME'
+
+export const SET_ISCOLLAPSE = "SET_ISCOLLAPSE"
+
+export const SET_HISTORYPATH = "SET_HISTORYPATH"
+
+export const SET_CURRENTNAVPATH = "SET_CURRENTNAVPATH"
+
+export const SET_MINISTRYLIST = "SET_MINISTRYLIST"
+
+export const SET_MENULIST = "SET_MENULIST"
+
+export const SET_TIPLIST = 'SET_TIPLIST'
+
+export const SET_AUTHORINFO = "SET_AUTHORINFO"
+
+export const SET_ISNAVSHOW = "SET_ISNAVSHOW";
+
+export const SET_TIMER5MIN = "SET_TIMER5MIN";
+
+export const SET_LASTTIME = "SET_LASTTIME";
+
+export const SET_ENDTIME30S = "SET_ENDTIME30S";
+
+export const SET_ENDTIME5S = "SET_ENDTIME5S";

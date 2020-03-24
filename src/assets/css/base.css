@@ -1,0 +1,376 @@
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html {
+  color: #000;
+  background: #f2f2f2;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+}
+legend {
+  color: #000;
+}
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+/*********  公共 **************/
+html {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #555;
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+.ma {
+  margin: 0 auto;
+}
+.wh {
+  width: 100%;
+  min-width: 1000px;
+}
+.wh2 {
+  width: 1000px;
+}
+.oh {
+  overflow: hidden;
+}
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
+}
+a {
+  text-decoration: none;
+  color: #555 !important;
+}
+.clr:before,
+.clr:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+input {
+  border: none;
+}
+.textInt {
+  text-indent: 2em;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #ccc;
+}
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+}
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ccc;
+}
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ccc;
+}
+.h100 {
+  height: 100%;
+}
+/* 图标icon */
+.icon-success-style {
+  color: #67c23a;
+  padding: 5px;
+}
+.icon-error-style {
+  color: #f56c6c;
+  padding: 5px;
+}
+.icon-remove-style {
+  color: gray;
+  padding: 5px;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.icon_1x5 {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: top;
+  margin: 0 5px;
+}
+/* 表单 */
+.form_date_custom {
+  height:0;
+  overflow: hidden;
+}
+.form-item-inline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.form-item-inline > div {
+  width: 50%;
+}
+.mu-input {
+    font-size: 14px !important;
+}
+.mu-input-help {
+  display: none !important;
+}
+.mu-input.multi-line,
+.mu-text-field-input.mu-text-field-textarea {
+  height: 100% !important;
+}
+.mu-radio-label,
+.mu-checkbox-label {
+  color: #757575 !important;
+  font-size: 14px !important;
+}
+.form-beizhu {
+  color: #999;
+  padding-left: 20px ;
+}
+/* table浮动的提示框 */
+.el-tooltip__popper {
+  max-width: 20% !important;
+}
+.el-tooltip__popper,
+.el-tooltip__popper.is-light {
+  border: 1px solid #fff !important;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #ebeef5 !important;
+}
+.el-tooltip__popper.is-light[x-placement^="top"] .popper__arrow {
+  border-top-color: #ebeef5 !important;
+}
+/* table */
+.g_el_table .el-select--mini,
+.g_el_table .el-input.el-input--mini {
+  padding: 0 !important;
+}
+.g_el_table .el-select {
+  width: 100% !important;
+}
+
+
+.ahsmp-table-expand {
+  font-size: 0;
+}
+.ahsmp-table-expand .el-form-item__label {
+  width: 110px;
+  color: #7a91a9;
+  text-align: justify;
+  text-align-last: justify;
+}
+.el-table__expanded-cell {
+  background-color: #f5f7fa;
+}
+.el-table__expanded-cell:hover {
+  background-color: #f5f7fa !important;
+}
+.ahsmp-table-expand .el-form-item__label:before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 5px;
+  background: #7a91a9;
+  vertical-align: middle;
+}
+.ahsmp-table-expand .el-form-item__label:after {
+  content: "";
+  width: 100%;
+  height: 0;
+}
+.ahsmp-table-expand .el-form-item {
+  width: 25%;
+  margin-right: 0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+.ahsmp-table-expand .el-form-item__content {
+  color: #999;
+}
+/* 翻页 */
+.el-pagination {
+  color: #dcdcdc !important;
+}
+/* 提示框 */
+/* 原本取消在前 确定在后  现在改为确定在前 取消在后 */
+.el-message-box__btns .el-button,
+.customer-button-wrap .el-button {
+  float: right !important;
+}
+.el-button + .el-button {
+  margin-right: 10px !important;
+}
+/* layer 高度 */
+.vl-notify.vl-notify-iframe {
+    overflow: auto !important;
+}
+.vl-notify.vl-notify-iframe .vl-notify-content {
+    max-height: 850px !important;
+}
+.el-badge__content.is-fixed {
+  top: 7px !important;
+    right: 12px !important;
+}
+.el-badge__content {
+  line-height: 14px !important;
+}
+.el-tree-node__label {
+    font-weight: normal !important;
+}
+/* color */
+.colorNotice {
+  color:#F56C6C;
+  font-weight: bold;
+  font-size:15px;
+}
+.colorBlueness {
+  color:cyan;
+}
+.colorOrange {
+  color:orange;
+}
+.colorRed {
+  color:red;
+}
+.colorPurple {
+  color:purple;
+}
+
+.warningTip:before {
+    content: "new";
+    background-color: #f56c6c;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 15px;
+    padding: 0 6px;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid #fff;
+    position: absolute;
+    top: -1px;
+    left: -6px;
+}

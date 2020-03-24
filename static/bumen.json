@@ -1,0 +1,32 @@
+{
+  "code": 0,
+  "message": "SUCCESS",
+  "data": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "title": "七月测试",
+      "spread": "true"
+    },
+    {
+      "id": 2,
+      "parentId": 1,
+      "title": "哈哈234"
+    },
+    {
+      "id": 5,
+      "parentId": 2,
+      "title": "123"
+    },
+    {
+      "id": 6,
+      "parentId": 1,
+      "title": "4666"
+    },
+    {
+      "id": 7,
+      "parentId": 6,
+      "title": "部门是"
+    }
+  ]
+}
