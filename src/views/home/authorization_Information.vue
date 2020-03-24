@@ -56,11 +56,12 @@ export default {
     return {
       unit_name: "",
       product_m_version: "",
-      time: ""
+      time: "",
+      status:""
     };
   },
   created() {
-    this.setAuthInfomation();
+    // this.setAuthInfomation();
   },
   computed: {
     ...mapGetters(["authorInfo"])

@@ -17,7 +17,11 @@ const assets_area = () => import("views/assets/area");
 const assets_business = () => import("views/assets/business");
 const assets_facilitator = () => import("views/assets/facilitator");
 const assets_organization = () => import("views/assets/organization");
+const assets_securitydomain = () => import("views/assets/securitydomain");
 
+/* 系统设置 */
+const systemset = () => import("views/systemset");
+const systemset_assets_custom = () => import("views/systemset/assets_custom");
 Vue.use(Router);
 
 let router = new Router({
@@ -93,6 +97,12 @@ let menuObj = {
       requireAuth: true
     }
   },
+  assets_securitydomain: {
+    component: assets_securitydomain,
+    meta: {
+      requireAuth: true
+    }
+  },
   assets_area: {
     component: assets_area,
     meta: {
@@ -113,6 +123,18 @@ let menuObj = {
   },
   assets_facilitator: {
     component: assets_facilitator,
+    meta: {
+      requireAuth: true
+    }
+  },
+  systemset: {
+    component: systemset,
+    meta: {
+      requireAuth: true
+    }
+  },
+  systemset_assets_custom: {
+    component: systemset_assets_custom,
     meta: {
       requireAuth: true
     }

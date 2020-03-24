@@ -13,7 +13,7 @@
     </el-row>
     <el-row :gutter="10">
       <el-col :xs="24" :sm="24" :md="24" :lg="24">
-          <data-browse></data-browse>
+          <!-- <data-browse></data-browse> -->
       </el-col>
     </el-row>
   </div>

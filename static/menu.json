@@ -1,5 +1,5 @@
 {
-  "code": 0,
+  "code": 200,
   "msg": "success",
   "data": [
     {
@@ -18,6 +18,11 @@
           "path": "/assets/area",
           "text": "资产位置"
         },
+         {
+          "name": "assets_securitydomain",
+          "path": "/assets/securitydomain",
+          "text": "安全域"
+        },
         {
           "name": "assets_organization",
           "path": "/assets/organization",
@@ -35,153 +40,18 @@
         }
       ]
     },
-    {
-      "name": "hostservice",
-      "path": "/hostservice",
-      "text": "模块管理",
-      "type": "el-icon-s-platform",
-      "children": [
-        {
-          "name": "hostservice_netfilter",
-          "path": "/hostservice/netfilter",
-          "text": "Netfilter服务"
-        },
-        {
-          "name": "hostservice_disguise",
-          "path": "/hostservice/disguise",
-          "text": "系统伪装"
-        },
-        {
-          "name": "hostservice_ips",
-          "path": "/hostservice/ips",
-          "text": "函谷盾"
-        },
-        {
-          "name": "hostservice_cfgcheck",
-          "path": "/hostservice/cfgcheck",
-          "text": "配置核查",
-          "redirect": "/unauthorized"
-        },
-        {
-          "name": "hostservice_extortion",
-          "path": "/hostservice/extortion",
-          "text": "勒索病毒防护",
-          "redirect": "/unauthorized"
-        },
-        {
-          "name": "hostservice_firewallrule",
-          "path": "/hostservice/firewallrule",
-          "text": "防火墙规则梳理",
-          "redirect": "/unauthorized"
-        }
-      ]
-    },
-    {
-      "name": "system",
-      "path": "/system",
-      "text": "平台管理",
-      "type": "el-icon-s-tools",
-      "children": [
-        {
-          "name": "system_managehost",
-          "path": "/system/managehost",
-          "text": "信任主机"
-        },
+     {
+       "name": "systemset",
+       "path": "/systemset",
+       "text": "系统设置",
+       "type": "el-icon-s-tools",
+       "children": [
          {
-          "name": "system_syncset",
-          "path": "/system/syncset",
-          "text": "同步配置",
-          "children": [
-            {
-              "name": "system_syncset_elk",
-              "path": "/system/syncset/elk",
-              "text": "黄金眼"
-            },
-            {
-              "name": "system_syncset_syslog",
-              "path": "/system/syncset/syslog",
-              "text": "syslog配置"
-            }
-          ]
-        },
-        {
-          "name": "system_platformset",
-          "path": "/system/platformset",
-          "text": "平台设置"
-        },
-        {
-          "name": "system_authorization",
-          "path": "/system/authorization",
-          "text": "授权管理"
-        },
-        {
-          "name": "system_usermanagement",
-          "path": "/system/usermanagement",
-          "text": "用户管理"
-        },
-        {
-          "name": "system_middleware",
-          "path": "/system/middleware",
-          "text": "中间件管理",
-          "children": [
-            {
-              "name": "system_middleware_logmanage",
-              "path": "/system/middleware/logmanage",
-              "text": "日志管理"
-            },
-            {
-              "name": "system_middleware_modulemanage",
-              "path": "/system/middleware/modulemanage",
-              "text": "模块管理"
-            },
-            {
-              "name": "system_middleware_proxymanage",
-              "path": "/system/middleware/proxymanage",
-              "text": "代理管理"
-            }
-          ]
-        },
-        {
-          "name": "system_log",
-          "path": "/system/log",
-          "text": "平台日志",
-          "children": [
-            {
-              "name": "system_log_operationlog",
-              "path": "/system/log/operationlog",
-              "text": "操作日志"
-            },
-            {
-              "name": "system_log_refreshlog",
-              "path": "/system/log/refreshlog",
-              "text": "更新日志"
-            },
-            {
-              "name": "system_log_communicationlog",
-              "path": "/system/log/communicationlog",
-              "text": "通信日志"
-            }
-          ]
-        },
-        {
-          "name": "system_productupdate",
-          "path": "/system/productupdate",
-          "type": "el-icon-location",
-          "text": "产品更新",
-          "children": [
-            {
-              "name": "system_productupdate_online",
-              "path": "/system/productupdate/online",
-              "text": "在线更新"
-            },
-            {
-              "name": "system_productupdate_offline",
-              "path": "/system/productupdate/offline",
-              "text": "离线更新"
-            }
-          ]
-        }
-      ]
-    }
+           "name": "systemset_assets_custom",
+           "path": "/systemset/assets_custom",
+           "text": "资产字段"
+         }
+       ]
+     }
   ]
 }

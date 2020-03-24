@@ -121,13 +121,13 @@ export function ajaxPro(opt) {
         return Promise.resolve(res);
       } else {
         if (res.code == 103) {
-          MessageBox.alert(res.msg, "提示信息", {
-            confirmButtonText: "确定",
-            type: "warning",
-            callback: action => {
-              store._actions.loginOut[0]("window");
-            }
-          });
+          // MessageBox.alert(res.msg, "提示信息", {
+          //   confirmButtonText: "确定",
+          //   type: "warning",
+          //   callback: action => {
+          //     store._actions.loginOut[0]("window");
+          //   }
+          // });
         } else {
           Message({
             showClose: true,
@@ -241,13 +241,13 @@ export function reqUnlodingPro(opt) {
         return Promise.resolve(res);
       } else {
         if (res.code == 103) {
-          MessageBox.alert(res.msg, "提示信息", {
-            confirmButtonText: "确定",
-            type: "warning",
-            callback: action => {
-              store._actions.loginOut[0]("window");
-            }
-          });
+          // MessageBox.alert(res.msg, "提示信息", {
+          //   confirmButtonText: "确定",
+          //   type: "warning",
+          //   callback: action => {
+          //     store._actions.loginOut[0]("window");
+          //   }
+          // });
         } else {
           Message({
             showClose: true,

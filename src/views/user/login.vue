@@ -123,18 +123,7 @@ export default {
       product_name: "自动化平台"
     };
   },
-  beforeRouteEnter(to, from, next) {
-    isInstall()
-      .then(res => {
-        let isInstall = res.data.is_install || 0;
-        if (isInstall == 0) {
-          next({ path: "/install" });
-        }else {
-          next()
-        }
-      })
-      .catch(err => {});
-  },
+  
   activated () {
     this.__authInfomation()
     this.__getCaptcha();

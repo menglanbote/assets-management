@@ -204,7 +204,7 @@ export default {
   data() {
     return {
       visibility: true,
-      activeStep: 0,
+      activeStep: 1,
       labelPosition: "right",
       typeRules: [{ validate: val => !!val, message: "通信模式不能为空" }],
       ipRules: [

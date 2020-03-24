@@ -34,7 +34,7 @@
 </template>
 <script>
 import { mapActions,mapGetters } from "vuex";
-import editPassword from "views/system/usermanagement/edit_password";
+import editPassword from "views/user/edit_password";
 
 export default {
   name: "nav_header",

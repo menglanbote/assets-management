@@ -42,21 +42,21 @@ export default {
     gaugeUsage
   },
   created() {
-    this.__getConfigUnloading({
-      type: "serverRunningStatus"
-    });
+    // this.__getConfigUnloading({
+    //   type: "serverRunningStatus"
+    // });
   },
   activated() {
-    this.timer = setInterval(() => {
-      this.__getConfigUnloading({
-        type: "serverRunningStatus"
-      });
-    }, 15000);
+    // this.timer = setInterval(() => {
+    //   this.__getConfigUnloading({
+    //     type: "serverRunningStatus"
+    //   });
+    // }, 15000);
   },
   deactivated() {
-    if (this.timer) {
-      clearInterval(this.timer);
-    }
+    // if (this.timer) {
+    //   clearInterval(this.timer);
+    // }
   },
   methods: {
     __getConfigUnloading(param) {
