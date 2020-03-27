@@ -6,15 +6,21 @@
       :label-position="labelPosition"
       label-width="120px"
       ref="assets_business_add"
-      :rules="rules"
     >
       <el-form-item
         label="业务系统名称"
         prop="name"
+        :rules="[
+          { required: true, message: '业务系统名称不能为空', trigger: 'blur' }
+        ]"
       >
         <el-input v-model="formData.name"></el-input>
       </el-form-item>
-      <el-form-item prop="status" label="业务系统状态" v-if="!is_add">
+      <el-form-item prop="status" label="业务系统状态" v-if="!is_add"
+         :rules="[
+          { required: true, message: '业务系统状态不能为空', trigger: 'blur' }
+        ]"
+      >
         <el-radio
           v-for="item of dropDownData.status"
           :key="item.id"
@@ -26,6 +32,9 @@
       <el-form-item
         prop="description"
         label="功能说明"
+        :rules="[
+          { required: true, message: '功能说明不能为空', trigger: 'blur' }
+        ]"
       >
         <el-input
           v-model="formData.description"
@@ -38,6 +47,9 @@
       <el-form-item
         prop="on_time"
         label="上线时间"
+        :rules="[
+          { required: true, message: '上线时间不能为空', trigger: 'blur' }
+        ]"
       >
         <!-- <mu-date-input
             v-model="formData.on_time"
@@ -88,24 +100,12 @@ export default {
   data() {
     return {
       labelPosition: "right",
-      assets_business_add:{
-        on_time: "",
-        status: 1,
-        description: "",
-        name: "",
-      },
       formData: {
         id: "",
         on_time: "",
         status: 1,
         description: "",
-        name: "",
-      },
-      rules:{
-       name: [{ required: true, message: '业务系统名称不能为空', trigger: 'blur' }],
-       on_time:[ { required: true, message: '上线时间不能为空', trigger: 'blur' }],
-       status:[{ required: true, message: '业务系统状态不能为空', trigger: 'blur' }],
-       description:[ { required: true, message: '功能说明不能为空', trigger: 'blur' }],
+        name: ""
       }
     };
   },

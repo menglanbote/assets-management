@@ -1,39 +1,39 @@
 <template>
   <div class="assets-facilitator-pause">
-    <mu-container>
-      <mu-form
+    <el-container>
+      <el-form
         :model="formData"
-        class="mu-demo-form"
+        class="el-demo-form"
         :label-position="labelPosition"
-        label-width="80"
+        label-width="120px"
         ref="assets_facilitator_pause"
       >
         <input type="hidden" v-model="formData.service_id" />
-        <mu-form-item prop="end_reason" label="终止原因" :rules="end_reasonRules">
-          <mu-select placeholder="请选择" v-model="formData.end_reason" full-width>
-            <mu-option
+        <el-form-item prop="end_reason" label="终止原因" :rules="end_reasonRules">
+          <el-select placeholder="请选择" v-model="formData.end_reason" full-width>
+            <el-option
               v-for="item in dropDownData.end_reasonRules"
               ripple
               :key="item.id"
               :label="item.name"
               :value="item.id"
-            ></mu-option>
-          </mu-select>
-        </mu-form-item>
-        <mu-form-item
+            ></el-option>
+          </el-select>
+        </el-form-item>
+        <el-form-item
           prop="end_reason_description"
           label="其他原因"
           v-if="formData.end_reason == 3"
           :rules="end_reason_descriptionRules"
         >
-          <mu-text-field v-model="formData.end_reason_description" :max-length="50"></mu-text-field>
-        </mu-form-item>
-        <mu-form-item>
-          <mu-button color="primary" small @click="submit">确定</mu-button>
-          <mu-button small @click="cancel">取消</mu-button>
-        </mu-form-item>
-      </mu-form>
-    </mu-container>
+          <el-input v-model="formData.end_reason_description" :max-length="50"></el-input>
+        </el-form-item>
+        <el-form-item>
+          <el-button color="primary" small @click="submit">确定</el-button>
+          <el-button small @click="cancel">取消</el-button>
+        </el-form-item>
+      </el-form>
+    </el-container>
   </div>
 </template>
 <script>
@@ -46,8 +46,7 @@ export default {
       labelPosition: "right",
       end_reasonRules: [
         {
-          validate: val => !!val,
-          message: "终止原因不能为空"
+          required:true,message:'账号不能为空',trigger:'blur'
         }
       ],
       end_reason_descriptionRules: [

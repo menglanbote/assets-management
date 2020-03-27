@@ -98,7 +98,9 @@ export default {
     return {
       url: "/service/list",
       type: "get",
+      
       cloumns: [
+        
         {
           type: "selection",
           fixed: "left"
@@ -123,8 +125,10 @@ export default {
           second_head: {
             prop: "name",
             width:'200px',
+             templateName: "name_head",
             templateHeadName: "name_head"
-          }
+          },
+          
         },
         {
           label: "服务商状态",
@@ -335,6 +339,8 @@ export default {
         shadeClose: false
       });
     },
+    
+
     __delFacilitator(param) {
       delFacilitator(param)
         .then(res => {

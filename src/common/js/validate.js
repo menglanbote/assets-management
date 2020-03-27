@@ -289,3 +289,23 @@ function checkAreaSize(arr1, arr2) {
   }
   return isTest;
 }
+
+
+
+//李雄的验证
+
+//电话
+export function isphone  (rule, value, callback)  {
+  const phoneReg = /^(0\d{4}-)?[123456789]{1}\d{7}$|^(0\d{2}-)?[123456789]{1}\d{7}$|^(0\d{3}-)?[123456789]{1}\d{6}$|^1[3456789]{1}\d{9}$/
+
+  if (!Number.isInteger(+value)) {
+    callback(new Error('请输入数字值'))
+  } else {
+    if (phoneReg.test(value)) {
+      callback()
+    } else {
+      callback(new Error('号码格式错误,若为座机号码请在区号后增加"-"'))
+    }
+  }
+};
+
